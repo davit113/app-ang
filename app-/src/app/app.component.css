@@ -1,0 +1,45 @@
+h1, h2{
+    text-align: center;
+}
+
+body{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+
+}
+header{
+    display: flex;
+    align-items: center;
+}
+header a{
+    opacity: 0.85;
+    background-color:var(--mark-background-color);
+
+
+}
+header a:hover{
+    opacity: 1;
+}
+header a:active{
+    opacity: 0.8;
+}
+header h2{
+    flex-grow: 1;
+    padding-left: 15px;
+}
+main{
+    /* background-color: lightblue; */
+    flex-grow: 1;
+}
+footer{
+    /* background-color: pink; */
+}
+
+.container{
+    /* display: grid;
+    grid-template-columns: repeat(3, 1fr); */
+}
+

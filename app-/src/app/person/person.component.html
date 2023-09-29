@@ -1,0 +1,29 @@
+<div class="top">
+    <div class="profile-div">
+        <div class="left">
+            <!-- <p>loading</p> -->
+            <img *ngIf="personParced" src="{{'/assets/img/'+ person.profilePic }}" alt="loading...">
+        </div>
+        <div class="right">
+            <div class="firstname">
+                <h2>First Name : {{this.person.firstName}}</h2>
+            </div>
+            <div class="lastname">
+                <h3>
+                Last Name : {{this.person.lastName}}
+                </h3>
+            </div>
+            <div class="description">
+                <p>
+                About Me: {{this.person.description}}
+            </p>
+            </div>    
+        </div>
+
+    </div>
+    <h2 class="h2-person">{{this.person.firstName}}'s friends:</h2>
+    <app-home-page
+    [personIds]="person.friendList"
+    ></app-home-page>
+</div>
+

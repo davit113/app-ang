@@ -1,0 +1,9 @@
+<a [routerLink]="['/person/'+this.person.id]"><div class="person-card">
+    <img src ="{{this.path}}" alt="Person Picture">
+    <div class="person-info">
+        <h2>{{ this.person.firstName }}</h2>
+        <p>{{ this.person.lastName }}</p>
+        <p>{{ this.person.description }}</p>
+    </div>
+</div>
+</a>

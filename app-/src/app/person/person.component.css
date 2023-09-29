@@ -1,0 +1,36 @@
+.profile-div{
+    display: flex;
+}
+.left{
+    position: relative;
+
+    max-width: 40%;
+}
+.left > p{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+img{
+    width: 100%;
+}
+.right{
+    flex-grow: 1;
+    padding-left: 5%;
+}
+.firstname >*, .lastname>*{
+    /* background-color: ; */
+    padding: 3%;
+    border-radius: 4px;
+    background-color:var(--mark-background-color);;
+}
+.description >* {
+    padding: 3%;
+    border-radius: 4px;
+}
+.h2-person{
+    padding-top: 15px;
+    margin-left: 15px;
+    /* background-color:var(--mark-background-color);; */
+    display: inline-block;
+}
